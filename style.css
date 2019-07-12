@@ -1,0 +1,20 @@
+* {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.buttonImage {
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
