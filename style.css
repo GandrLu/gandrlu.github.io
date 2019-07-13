@@ -1,5 +1,6 @@
 * {
     font-family: Calibri, Arial, Helvetica, sans-serif;
+    margin: 0%;
 }
 
 a:link {
@@ -12,9 +13,42 @@ a:visited {
     text-decoration: none;
 }
 
+h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
 .buttonImage {
     margin-left: 30px;
     margin-right: auto;
-    margin-top: auto;
     margin-bottom: auto;
+    height: 125px;
+    width: 125px;
+}
+
+.buttonImage:hover {
+    transform: rotate(40deg);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #1f1f1f;
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 50px;
+    /* width: 100%; */
+    box-shadow: 0px 5px 10px black;
+    
+}
+
+.textBox {
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 20px 20px 20px;
+    width: 50%;
+    min-height: 300px;
 }
