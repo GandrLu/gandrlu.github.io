@@ -3,6 +3,11 @@
     margin: 0%;
 }
 
+body {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
 a:link {
     color: black;
     text-decoration: none;
@@ -31,24 +36,75 @@ h2 {
     text-decoration: none;
 }
 
+.buttonBar {
+    display: inline;
+    margin-left: 50px;
+}
+
 .link:hover {
     text-decoration: underline;
     color: #1f1f1f;
 }
 
 .header {
+    background-color: white;
     padding: 10px;
     margin-bottom: 50px;
     /* width: 100%; */
     box-shadow: 0px 5px 10px black;
-    
+}
+
+.headerLogo {
+    height: 125px;
+    width: 440px;
 }
 
 .textBox {
-    background-color: gray;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     padding: 1px 20px 20px 20px;
     width: 50%;
     min-height: 300px;
+    box-shadow: 0px 5px 10px 0px black;
+}
+
+@media only screen and (max-width: 1150px) {
+    .buttonBar {
+        margin-left: 0px;
+        display: block;
+    }
+
+    .headerLogo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textBox {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .buttonImage {
+        height: 80px;
+        width: 80px;
+    }
+
+    .headerLogo {
+        width: 100%;
+        /* min-width: 300px; */
+        height: auto;
+    }
+
+    .textBox {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .buttonImage {
+        width: 100px;
+        height: auto;
+    }
 }
