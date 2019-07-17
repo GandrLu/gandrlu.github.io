@@ -9,12 +9,12 @@ body {
 }
 
 a:link {
-    color: black;
+    color: darkgrey;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: darkgrey;
     text-decoration: none;
 }
 
