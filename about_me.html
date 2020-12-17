@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -11,51 +11,143 @@
 <body>
     <!-- HEADER -->
     <div class="header">
-            <a href="index.html">
-                <img src="gandrlu_border_small.png" class="headerLogo">
+        <div class="headerLogo">
+            <!--<a href="index.html">-->
+                <img src="gandrlu_border_small.png">
+            <!--</a>-->
+        </div>
+        <!--<div class="buttonBar">
+            <a href="about_me.html">
+                <img class="buttonImage" src="about_me_small.png">
             </a>
-            <div class="buttonBar">
-                <a href="about_me.html">
-                    <img class="buttonImage" src="about_me_small.png">
-                </a>
-                <a href="game_dev.html">
-                    <img class="buttonImage" src="game_dev.png">
-                </a>
-                <a href="art.html">
-                    <img class="buttonImage" src="art_small.png">
-                </a>
-                <a href="links.html">
-                    <img class="buttonImage" src="links.png">
-                </a>
-            </div>
+            <a href="game_dev.html">
+                <img class="buttonImage" src="game_dev.png">
+            </a>
+            <a href="art.html">
+                <img class="buttonImage" src="art_small.png">
+            </a>
+            <a href="links.html">
+                <img class="buttonImage" src="links.png">
+            </a>
+        </div>-->
     </div>
     <!-- CONTENT -->
-    <div class="textBox">
-            <h2>About GandrLu</h2>
-            <p style="padding-bottom:10px">
-                Hey there! My name is Luzius or Gandrlu. Welcome to my website, it 
-                offers some informations about my interests and my doings. Amongst 
-                other things, I am interested in the following:
-            </p>
-            <ul>
-                <li>Game Development</li>
-                <li>Frontend Development</li>
-                <li>Art for games</li>
-                <li>Graphics programming</li>
-                <li>AI</li>
-            </ul>
+    <div class="flex-container">
+        <div class="flex-sidecolumn">
+            <h2>Links</h2>
+            <a class="link" href="http://www.github.com/gandrlu" target="_blank">GitHub - GandrLu</a>
             <br>
-            <p style="padding-bottom:10px">
-                To say in general, I want to create visually appealing applications 
-                with impressive functionality.
-            </p>
-            <p style="padding-bottom:10px">
-                I would like to participate in interesting projects to improve my 
-                skills and learn new things. So if you stumbled somehow about this 
-                page and think I would fit your project, send me a message:
-                <b>luzius_k[at]live.de</b>
-            </p>
-			
+            <a class="link" href="http://gandrlu.artstation.com" target="_blank">Artstation - GandrLu</a>
+            <br>
         </div>
+
+        <div class="flex-maincolumn">
+
+            <div class="textBox">
+                <!-- ABOUT -->
+                <h1>About GandrLu</h1>
+                <p style="padding-bottom:10px">
+                    Hey there! My name is Luzius or Gandrlu. Welcome to my website, it
+                    offers some informations about my interests and my doings. Amongst
+                    other things, I am interested in the following:
+                </p>
+                <ul>
+                    <li>Game Development</li>
+                    <li>Frontend Development</li>
+                    <li>Art for games</li>
+                    <li>Graphics programming</li>
+                </ul>
+                <br>
+                <p style="padding-bottom:10px">
+                    To say in general, I want to create visually appealing applications
+                    with convincing features.
+                </p>
+                <p style="padding-bottom:10px">
+                    I would like to participate in interesting projects to improve my
+                    skills and learn new things. So if you stumbled somehow about this
+                    page and think I would fit your project, send me a message:
+                    <b>luzius_k[at]live.de</b>
+                </p>
+                <br>
+                <br>
+
+                <!-- PROJECTS -->
+                <h1>Projects of mine</h1>
+
+                <h2>OnionWar</h2>
+                <p>Upcoming tactical shooter game with roleplay elements.</p>
+                <a class="link" href="https://github.com/GandrLu/OnionWar" target="_blank">-> Find out more on GitHub</a>
+                <br>
+
+                <h2>Taxiii</h2>
+                <p>
+                    A litte android mobile game prototype where you steer a taxi through the traffic.
+                    The traffic and obstacles are generated randomly and the taxi drives continuously faster over time.
+                    The game is created with unity by using assets from synty studios.
+                </p>
+                <br>
+                <iframe src="https://player.vimeo.com/video/409808341" width="640" height="369" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                <h2>BearPong - MiniGameJam Berlin 11/2019</h2>
+                <p>
+                    We made this little game where you take bears to the moon.
+                    Thanks to my teammates for this fun little project.
+                    Press the left mousebutton to charge a catapult and release it to
+                    shoot. Levels are randomly generated, when too hard, reload the page.
+                    Reach the moon!
+                </p>
+                <a href="bearpong/index.html">Play it here</a>
+
+                <h2>Brick breaker game - C++ and qt</h2>
+
+                <p>
+                    This is a simple brick breaker game made with C++ and qt.
+                    I kept the art style very simple (all was done by me) as I wanted to focus on learning qt.
+                    <a href="https://github.com/GandrLu/BrickBall">You can find the sourcecode here at GitHub.</a>
+                </p>
+                <br>
+
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="BrickBall_Title.png">
+                            <img src="BrickBall_Title.png" alt="BrickBall Titlescreen">
+                        </a>
+                        <div class="desc">Titlescreen of BrickBall</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="BrickBall_Game1.png">
+                            <img src="BrickBall_Game1.png" alt="BrickBall Gamescene">
+                        </a>
+                        <div class="desc">Gamescene of BrickBall - picked up a second ball</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <h2>Cooling Module Game</h2>
+                <p>
+                    This is a mini game that represents the cooling system of a PC. It is part of a bigger
+                    system with other computer components as (multiplayer) mini games, but this video shows
+                    only the fuctionality of the cooling system isolated, which was my part.
+                    The game and all assets are done by me (with 3DS Max and Unity) except:
+                    <ul>
+                        <li>Player (Model, Anims, Movement)</li>
+                        <li>Music: Benjamin TISSOT bensound.com</li>
+                        <li>SoundFX: soundbible.com</li>
+                    </ul>
+                    <a href="https://github.com/GandrLu/Cooling-Module-Game">Git repository can be found here.</a>
+                </p>
+                <br>
+                <iframe src="https://player.vimeo.com/video/322762717" width="640" height="369" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
