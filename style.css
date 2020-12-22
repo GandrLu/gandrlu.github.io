@@ -8,30 +8,40 @@ body {
     width: 100%;
 }
 
-a:link {
-    color: darkgrey;
-    text-decoration: none;
+p, li, a {
+    font-size: 18px;
 }
 
-a:visited {
-    color: darkgrey;
-    text-decoration: none;
-}
+    a:link {
+        color: darkgrey;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: darkgrey;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #1f1f1f;
+    }
 
 h2 {
+    color: darkred;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-  padding: 0 0 10px 0;
-  text-align: center;
-  font-style: italic;
+    padding: 0 0 10px 0;
+    text-align: center;
+    font-style: italic;
 }
 
 .buttonImage {
@@ -42,10 +52,10 @@ div.desc {
     width: 125px;
 }
 
-.buttonImage:hover {
-    transform: rotate(40deg);
-    text-decoration: none;
-}
+    .buttonImage:hover {
+        transform: rotate(40deg);
+        text-decoration: none;
+    }
 
 .buttonBar {
     display: inline;
@@ -53,10 +63,10 @@ div.desc {
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 0 0 20px 0;
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0 0 20px 0;
 }
 
 .link:hover {
@@ -69,11 +79,19 @@ div.desc {
     flex-wrap: wrap;
 }
 
-.flex-sidecolumn {
-    flex-grow: 1;
+.sidecolumn {
+    /*position: -webkit-sticky;*/
+    /*position: fixed;*/
+    top: 200px;
+    /*flex-grow: 1;*/
     padding: 1px 20px 20px 20px;
     /*background-color: darkseagreen;*/
 }
+
+    .sidecolumn ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
 .flex-maincolumn {
     flex-grow: 3;
@@ -88,17 +106,37 @@ div.desc {
     box-shadow: 0px 5px 10px black;
 }
 
+    .header h2 {
+        color: purple;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 .headerLogo {
     margin-left: auto;
     margin-right: auto;
-    height: 125px;
+    /*height: 125px;*/
     width: 440px;
 }
 
+    .headerLogo img {
+        width: 100%;
+    }
+
 .responsive {
-	padding: 0 6px;
-	float: left;
-	width: 45%;
+    padding: 0 6px;
+    float: left;
+    width: 45%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sidebarPlaceholder {
+    width: 0px;
 }
 
 .textBox {
@@ -111,9 +149,9 @@ div.desc {
     box-shadow: 0px 5px 10px 0px black;
 }
 
-.textBox iframe {
-	/*width: 100%;*/
-}
+    .textBox iframe {
+        /*width: 100%;*/
+    }
 
 @media only screen and (max-width: 1150px) {
     .buttonBar {
@@ -146,10 +184,10 @@ div.desc {
     .textBox {
         width: 80%;
     }
-		
-	.responsive {
-		width: 100%;
-	}
+
+    .responsive {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 450px) {

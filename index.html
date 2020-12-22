@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -10,52 +10,173 @@
 </head>
 <body>
     <!-- HEADER -->
-    <div class="header">
-            <a href="index.html">
-                <img src="gandrlu_border_small.png" class="headerLogo">
-            </a>
-            <div class="buttonBar">
-                <a href="about_me.html">
-                    <img class="buttonImage" src="about_me_small.png">
-                </a>
-                <a href="game_dev.html">
-                    <img class="buttonImage" src="game_dev.png">
-                </a>
-                <a href="art.html">
-                    <img class="buttonImage" src="art_small.png">
-                </a>
-                <a href="links.html">
-                    <img class="buttonImage" src="links.png">
-                </a>
-            </div>
+    <div class="header" id="header">
+        <div class="headerLogo">
+            <img src="gandrlu_border_small.png">
+        </div>
+        <div class="flex-container">
+            <h2>Unity Development</h2>
+            <h2>.NET Development</h2>
+        </div>
     </div>
-    <!-- CONTENT -->
-    <div class="textBox">
-        <h2>News</h2>
-        <b>20.04.2020</b>
-        <p>In my personal game jam in times of shutdown, I created a litte mobile casual game, where 
-            the player steers a cab through the traffic. See it <a class="link" href="game_dev.html">here</a>.</p>
-        <br>
-        <b>10.11.2019</b>
-        <p>Yesterday I was at the Berlin Mini Game Jam. It was my first jam and really fun. 
-            My team made a little game called "BearPong" in eight hours, using the topics 
-            "I am a bear on the moon. How did I get here!?" and "Minimal Games".
-            I will attend more jams in the future as it is a way great to learn something and
-            have fun. You can find the game <a class="link" href="game_dev.html">here</a>.</p>
-        <br>
-        <b>17.07.2019</b>
-        <p>Added a model to the <a class="link" href="art.html">art</a> section. It's a gobbo!</p>
-        <br>
-        <b>16.07.2019 - My website is responsive</b>
-        <p>It should fit now most devices and screen formats.</p>
-        <br>
-        <b>13.07.2019 - My website is online!</b>
-        <p>I created this website to show my software projects and a bit about myself.
-            It is a plain, simple HTML / CSS website and it is not responsive yet, 
-            but it fits the purpose for now. My projects will be most in games
-             context, as that is my main interest and goal. Feel free to take a
-              look around ;)</p>
+    <!-- MAIN -->
+    <div class="flex-container">
+        <!-- NAVIGATION -->
+        <div class="sidecolumn" id="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#header">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#onionWar">OnionWar</a></li>
+                <li><a href="#cooling">Cooling Module</a></li>
+                <li><a href="#brickBreaker">Brick Breaker</a></li>
+                <li><a href="#taxiii">Taxiii</a></li>
+                <li><a href="#bearPong">Bear Pong</a></li>
+            </ul>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="http://www.github.com/gandrlu" target="_blank">GitHub</a></li>
+                <li><a href="http://gandrlu.artstation.com" target="_blank">Artstation</a></li>
+            </ul>
+        </div>
+        <div class="sidebarPlaceholder" id="sidebarPlaceholder"></div>
 
+        <!-- CONTENT -->
+        <div class="flex-maincolumn">
+
+            <div class="textBox">
+                <!-- ABOUT -->
+                <h1 id="about">About GandrLu</h1>
+                <p style="padding-bottom:10px">
+                    Hey there! My name is Luzius. Gandrlu is my online alias and the name under which I
+                    create my projects. Welcome to my website, you can find my projects here. Topics I
+                    am interested in are:
+                </p>
+                <ul>
+                    <li>Game Development</li>
+                    <li>Frontend Development</li>
+                    <li>Art for games</li>
+                    <li>Graphics programming</li>
+                </ul>
+                <br>
+                <p style="padding-bottom:10px">
+                    I make games using mostly Unity, my focus is on coding and gameplay design. Working
+                    on art (models, textures, sprites) and other assets are not unknown to me. I take that
+                    hat as well from time to time and like it, but to save time and be able to concentrate
+                    more on the other parts, I like to purchase it mostly.
+                    Developing applications with .NET is another passion of mine. I like to work with WPF
+                    and making the most out of the frameworks nice features.
+                    In general, I want to create visually appealing applications
+                    with convincing features.
+                </p>
+                <p style="padding-bottom:10px">
+                    I like to participate in interesting projects to improve my
+                    skills further and learn new things. So if you stumbled somehow about this
+                    and think I could fit your project, send me a message:
+                    <b>luzius_k[at]live.de</b>
+                </p>
+                <br>
+                <br>
+
+                <!-- PROJECTS -->
+                <h1 id="projects">Projects of mine</h1>
+
+                <h2 id="onionWar">OnionWar</h2>
+                <p>
+                    This is my current project I am working on. It is a upcoming tactical shooter game
+                    with roleplay elements.
+                </p>
+                <a class="link" href="https://github.com/GandrLu/OnionWar" target="_blank">-> Find out more on GitHub</a>
+                <br>
+
+                <h2 id="cooling">Cooling Module Game</h2>
+                <p>
+                    This is a mini game that represents the cooling system of a PC. It is part of a bigger
+                    system with other computer components as (multiplayer) mini games, but this video shows
+                    only the fuctionality of the cooling system isolated, which was my part.
+                    The game and all assets are done by me (with 3DS Max and Unity) except:
+                    <ul>
+                        <li>Player (Model, Anims, Movement)</li>
+                        <li>Music: Benjamin TISSOT bensound.com</li>
+                        <li>SoundFX: soundbible.com</li>
+                    </ul>
+                    <a href="https://github.com/GandrLu/Cooling-Module-Game">Git repository can be found here.</a>
+                </p>
+                <br>
+                <iframe src="https://player.vimeo.com/video/322762717" width="640" height="369" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                <h2 id="brickBreaker">Brick breaker game - C++ and qt</h2>
+                <p>
+                    This is a simple brick breaker game made with C++ and qt.
+                    I kept the art style very simple (all was done by me) as I wanted to focus on learning qt.
+                    <a href="https://github.com/GandrLu/BrickBall">You can find the sourcecode here at GitHub.</a>
+                </p>
+                <br>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="BrickBall_Title.png">
+                            <img src="BrickBall_Title.png" alt="BrickBall Titlescreen">
+                        </a>
+                        <div class="desc">Titlescreen of BrickBall</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="BrickBall_Game1.png">
+                            <img src="BrickBall_Game1.png" alt="BrickBall Gamescene">
+                        </a>
+                        <div class="desc">Gamescene of BrickBall - picked up a second ball</div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <h2 id="taxiii">Taxiii</h2>
+                <p>
+                    A litte android mobile game prototype where you steer a taxi through the traffic.
+                    The traffic and obstacles are generated randomly and the taxi drives continuously faster over time.
+                    The game is created with unity by using assets from synty studios.
+                </p>
+                <br>
+                <iframe src="https://player.vimeo.com/video/409808341" width="640" height="369" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                <h2 id="bearPong">BearPong - MiniGameJam Berlin 11/2019</h2>
+                <p>
+                    We made this little game where you take bears to the moon.
+                    Thanks to my teammates for this fun little project.
+                    Press the left mousebutton to charge a catapult and release it to
+                    shoot. Levels are randomly generated, when too hard, reload the page.
+                    Reach the moon!
+                </p>
+                <a href="bearpong/index.html">Play it here</a>
+
+            </div>
+            <br />
+        </div>
     </div>
+
+
+    <script>
+window.onscroll = function() {stickSidebar()};
+
+var sidebar = document.getElementById("sidebar");
+var placeholder = document.getElementById("sidebarPlaceholder");
+var width = sidebar.offsetWidth;
+var sticky = sidebar.offsetTop;
+
+function stickSidebar() {
+  if (window.pageYOffset > sticky) {
+      sidebar.classList.add("sticky");
+      placeholder.style.width = width + "px";
+  } else {
+      sidebar.classList.remove("sticky");
+      placeholder.style.width = "0px";
+  }
+}
+    </script>
+
 </body>
 </html>
