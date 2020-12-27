@@ -44,6 +44,14 @@ div.desc {
     font-style: italic;
 }
 
+iframe {
+    width: 100%;
+}
+
+.active {
+    background-color: purple;
+}
+
 .buttonImage {
     margin-left: 30px;
     margin-right: auto;
@@ -67,6 +75,10 @@ div.desc {
     display: table;
     clear: both;
     padding: 0 0 20px 0;
+}
+
+.closebtn {
+    visibility: hidden;
 }
 
 .link:hover {
@@ -95,14 +107,14 @@ div.desc {
 
 .flex-maincolumn {
     flex-grow: 3;
-    width: 80%
+    width: 80%;
 }
 
 .header {
     background-color: white;
     padding: 10px;
     margin-bottom: 50px;
-    /* width: 100%; */
+    /*width: 100%;*/
     box-shadow: 0px 5px 10px black;
 }
 
@@ -123,6 +135,15 @@ div.desc {
     .headerLogo img {
         width: 100%;
     }
+
+.openbtn {
+    /*height: 0;
+    border: 0;*/
+    width: 0;
+    border: 0;
+    padding: 0;
+    visibility: hidden;
+}
 
 .responsive {
     padding: 0 6px;
@@ -148,10 +169,6 @@ div.desc {
     min-height: 300px;
     box-shadow: 0px 5px 10px 0px black;
 }
-
-    .textBox iframe {
-        /*width: 100%;*/
-    }
 
 @media only screen and (max-width: 1150px) {
     .buttonBar {
@@ -188,11 +205,54 @@ div.desc {
     .responsive {
         width: 100%;
     }
+
+    .openbtn {
+        position: fixed;
+        bottom: 0;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: purple;
+        color: #111;
+        padding: 10px 15px;
+        border: none;
+        visibility: visible;
+        width: auto;
+    }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+    .sidecolumn {
+        padding: 0;
+        width: 0;
+        background-color: lightgrey;
+        visibility: hidden;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+    }
+
+        .sidecolumn a {
+            color: black;
+        }
+
+        .sidecolumn .closebtn {
+            bottom: 0;
+            font-size: 48px;
+            margin-left: 10px;
+            color: #111;
+            visibility: inherit;
+        }
 }
 
 @media only screen and (max-width: 450px) {
     .buttonImage {
         width: 100px;
         height: auto;
+    }
+
+    .headerLogo {
+        width: 90%;
     }
 }

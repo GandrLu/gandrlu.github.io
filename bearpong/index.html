@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | BearPong</title>
@@ -9,41 +9,33 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
+    <script>var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});</script>
+</head>
+<body>
     <!-- HEADER -->
-    <div class="header">
+    <div class="header" id="header">
         <a href="../index.html">
-            <img src="../gandrlu_border_small.png" class="headerLogo">
+            <div class="headerLogo">
+                <img src="../gandrlu_border_small.png">
+            </div>
         </a>
-        <div class="buttonBar">
-            <a href="../about_me.html">
-                <img class="buttonImage" src="../about_me_small.png">
-            </a>
-            <a href="../game_dev.html">
-                <img class="buttonImage" src="../game_dev.png">
-            </a>
-            <a href="../art.html">
-                <img class="buttonImage" src="../art_small.png">
-            </a>
-            <a href="../links.html">
-                <img class="buttonImage" src="../links.png">
-            </a>
+        <div class="flex-container">
+            <h2>Unity Development</h2>
+            <h2>.NET Development</h2>
         </div>
-</div>
-<br>
-<br>
-<br>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">BearPong</div>
-      </div>
     </div>
-  </body>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="title">BearPong</div>
+        </div>
+    </div>
+</body>
 </html>
