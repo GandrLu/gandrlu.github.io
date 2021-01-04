@@ -229,7 +229,7 @@ iframe {
         padding: 10px 15px;
         border: none;
         visibility: visible;
-        width: auto;
+        width: 100%;
     }
 
         .openbtn:hover {
@@ -248,12 +248,18 @@ iframe {
 
         .sidecolumn a {
             color: black;
+            display: block;
+            text-align: center;
+        }
+
+        .sidecolumn h2 {
+            display: block;
+            text-align: center;
         }
 
         .sidecolumn .closebtn {
             bottom: 0;
             font-size: 48px;
-            margin-left: 10px;
             color: #111;
             visibility: inherit;
         }
