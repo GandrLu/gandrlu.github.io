@@ -50,28 +50,51 @@
             <div class="textBox">
                 <!-- ABOUT -->
                 <h1 id="about">About GandrLu</h1>
+
+                <img class="portrait" src="comic_gandrlu_neon.png" alt="Gandrlu Portrait">
+
                 <p style="padding-bottom:10px">
-                    Hey there! My name is Luzius. Gandrlu is my online alias and the name under which I
-                    create my projects. Welcome to my website, you can find my projects here. Topics I
-                    am interested in are:
+                    Hey, my name is Luzius and I create games under the label Gandrlu.
+                    Welcome to my website, you can find my projects here.
                 </p>
-                <ul>
-                    <li>Game Development</li>
-                    <li>Frontend Development</li>
-                    <li>Art for games</li>
-                    <li>Graphics programming</li>
-                </ul>
-                <br>
                 <p style="padding-bottom:10px">
-                    I make games using mostly Unity, my focus is on coding and gameplay design. Working
-                    on art (models, textures, sprites) and other assets are not unknown to me. I take that
-                    hat as well from time to time and like it, but to save time and be able to concentrate
-                    more on the other parts, I like to purchase it mostly.
-                    Developing applications with .NET is another passion of mine. I like to work with WPF
-                    and making the most out of the frameworks nice features.
-                    In general, I want to create visually appealing applications
-                    with convincing features.
+                    I make games mainly with Unity, my focus is on coding and gameplay design.
+                    Working on art (models, textures, sprites) and other assets are not unknown
+                    to me. I also pick it up from time to time and like it, but to save time 
+                    and to be able to focus more on the other parts, I like to use external assets.
                 </p>
+                <p>
+                    Developing applications with .NET is another passion of mine. I like working 
+                    with WPF and making the most of the great features of C#/.NET.
+                </p>
+                <div class="clearfix"></div>
+
+                <p style="padding-bottom:10px">
+                    Technologies and applications I work with:
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>C#</li>
+                                <li>C++</li>
+                                <li>Unity 3D</li>
+                                <li>.NET Core / Framework</li>
+                                <li>WPF</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Qt</li>
+                                <li>Visual Studio 2019</li>
+                                <li>Blender</li>
+                                <li>GIMP</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <br />
                 <p style="padding-bottom:10px">
                     I like to participate in interesting projects to improve my
                     skills further and learn new things. So if you stumbled somehow about this
@@ -82,7 +105,7 @@
                 <br>
 
                 <!-- PROJECTS -->
-                <h1 id="projects">Projects of mine</h1>
+                <h1 id="projects">My Projects</h1>
 
                 <h2 id="onionWar">OnionWar</h2>
                 <p>
@@ -163,42 +186,42 @@
 
 
     <script>
-window.onscroll = function () { stickSidebar(); };
+        window.onscroll = function () { stickSidebar(); };
 
-var sidebar = document.getElementById("sidebar");
-var placeholder = document.getElementById("sidebarPlaceholder");
-var width = sidebar.offsetWidth;
-var sticky = sidebar.offsetTop;
+        var sidebar = document.getElementById("sidebar");
+        var placeholder = document.getElementById("sidebarPlaceholder");
+        var width = sidebar.offsetWidth;
+        var sticky = sidebar.offsetTop;
 
-function stickSidebar() {
-    if (window.pageYOffset > sticky) {
-        sidebar.classList.add("sticky");
-        placeholder.style.width = width + "px";
-    } else {
-        sidebar.classList.remove("sticky");
-        placeholder.style.width = "0px";
-    }
-}
-
-function setActive() {
-    console.log("Active");
-    aObj = document.getElementById("sidebar").getElementsByTagName('a');
-    for (i = 0; i < aObj.length; i++) {
-        if (document.location.href.indexOf(aObj[i].href) >= 0) {
-            aObj[i].className = 'active';
+        function stickSidebar() {
+            if (window.pageYOffset > sticky) {
+                sidebar.classList.add("sticky");
+                placeholder.style.width = width + "px";
+            } else {
+                sidebar.classList.remove("sticky");
+                placeholder.style.width = "0px";
+            }
         }
-    }
-}
 
-function openNav() {
-    document.getElementById("sidebar").style.width = "250px";
-    document.getElementById("sidebar").style.visibility = "visible";
-}
+        function setActive() {
+            console.log("Active");
+            aObj = document.getElementById("sidebar").getElementsByTagName('a');
+            for (i = 0; i < aObj.length; i++) {
+                if (document.location.href.indexOf(aObj[i].href) >= 0) {
+                    aObj[i].className = 'active';
+                }
+            }
+        }
 
-function closeNav() {
-    document.getElementById("sidebar").style.width = "0";
-    document.getElementById("sidebar").style.visibility = "hidden";
-}
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("sidebar").style.visibility = "visible";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("sidebar").style.visibility = "hidden";
+        }
     </script>
 
 </body>

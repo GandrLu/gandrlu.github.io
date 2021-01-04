@@ -9,7 +9,7 @@ body {
 }
 
 p, li, a {
-    font-size: 18px;
+    font-size: 20px;
 }
 
     a:link {
@@ -26,6 +26,11 @@ p, li, a {
         text-decoration: underline;
         color: #1f1f1f;
     }
+
+h1 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
 
 h2 {
     color: darkred;
@@ -143,6 +148,14 @@ iframe {
     border: 0;
     padding: 0;
     visibility: hidden;
+}
+
+.portrait {
+    width: auto;
+    height: 200px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .responsive {
