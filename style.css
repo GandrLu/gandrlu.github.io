@@ -177,6 +177,16 @@ iframe {
     width: 45%;
 }
 
+@keyframes rotateY {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(720deg);}
+}
+
+.rotateYAnimation {
+    animation-name: rotateY;
+    animation-duration: 0.8s;
+}
+
 .sticky {
     position: fixed;
     top: 0;
