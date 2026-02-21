@@ -25,7 +25,7 @@ const count = ref(0)
   <div v-if="imgs">
     <div v-for="(img, index) in imgs" class="responsive">
       <div class="gallery">
-        <img :key="index" :src="img" alt="Article Image" :class="img.includes('portrait') ? 'portraitFormatImg' : ''">
+        <img :key="index" :src="img + '?url'" alt="Article Image" :class="img.includes('portrait') ? 'portraitFormatImg' : ''">
       </div>
     </div>
   </div>
