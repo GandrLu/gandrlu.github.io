@@ -6,7 +6,7 @@ defineProps({
   title: String,
   text: String,
   listing: Array,
-  reference: String,
+  reference: Object,
   imgs: Array,
   vVids: Array
 })
@@ -20,12 +20,12 @@ const count = ref(0)
   <ul v-if="listing">
     <li v-for="(item, index) in listing" :key="index">{{ item }}</li>
   </ul>
-  <p v-if="reference">Further insights: <a :href="reference" target="_blank">{{ reference }}</a></p>
-  <br>
+  <a v-if="reference" :href="reference.link" target="_blank">{{ reference.text }}</a>
+  <br />
   <div v-if="imgs">
     <div v-for="(img, index) in imgs" class="responsive">
       <div class="gallery">
-        <img :key="index" :src="img" alt="Article Image">
+        <img :key="index" :src="img" alt="Article Image" :class="img.includes('portrait') ? 'portraitFormatImg' : ''">
       </div>
     </div>
   </div>
@@ -46,4 +46,8 @@ const count = ref(0)
   <div class="clearfix"></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  display: block;
+}
+</style>

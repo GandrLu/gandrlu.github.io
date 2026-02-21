@@ -14,8 +14,14 @@ import Navigation from './components/Navigation.vue';
       <div class="textBox">
         <About />
         <h1 id="projects">My Projects</h1>
+        <Article aId="lyriquiz" title="Lyriquiz - A Lyric based Song Quiz"
+          text="A vue.js web app that offers a lyric based song quiz. It uses the spotify and the lrclib.net api to generate personalised questions."
+          :imgs="[
+            'src/assets/lyriquiz1_portrait.JPG'
+          ]"
+          :reference="{text: 'Try it here', link: 'https://lyriquiz-2aea0.web.app'}" />
         <Article aId="VrAirships" title="VR Airships"
-          text="This is my latest project I am working on. It is a VR Game where you pilot a steampunk airship through various missions. The game is created with Unity and all assets are done by me."
+          text="This is my latest VR project I am working on. It is a VR Game where you pilot a steampunk airship through various missions. The game is created with Unity and all assets are done by me."
           :imgs="[
             'src/assets/shippair1.JPG',
             'src/assets/shippair3.JPG',
@@ -23,7 +29,8 @@ import Navigation from './components/Navigation.vue';
           ]" />
         <Article aId="OnionWar" title="OnionWar"
           text="This is a tactical shooter game with roleplay elements. Work in progress but first playable multiplayer version is ready."
-          reference="https://github.com/GandrLu/Cooling-Module-Game" :imgs="[
+          :reference="{text: 'See the GitHub Project', link: 'https://github.com/GandrLu/Cooling-Module-Game'}"
+          :imgs="[
             'src/assets/OnionWarRunning.gif',
             'src/assets/OnionWarShooting.gif',
           ]" :vVids="[
@@ -32,7 +39,8 @@ import Navigation from './components/Navigation.vue';
           ]" />
         <Article aId="Coolingsystem" title="Cooling System Module Game"
           text="This is a mini game that represents the cooling system of a PC. It is part of a bigger system with other computer components as (multiplayer) mini games, but this video shows only the fuctionality of the cooling system isolated, which was my part. The game and all assets are done by me (with 3DS Max and Unity) except:"
-          reference="https://github.com/GandrLu/Cooling-Module-Game" :listing="[
+          :reference="{text: 'See the GitHub Project', link: 'https://github.com/GandrLu/Cooling-Module-Game'}"
+          :listing="[
             'Player (Model, Anims, Movement)',
             'Music: Benjamin TISSOT bensound.com',
             'SoundFX: soundbible.com'
@@ -41,7 +49,8 @@ import Navigation from './components/Navigation.vue';
           ]" />
         <Article aId="BrickBreaker" title="Brick breaker game - C++ and qt"
           text="This is a simple brick breaker game made with C++ and qt. I kept the art style very simple (all was done by me) as I wanted to focus on learning qt."
-          reference="https://github.com/GandrLu/BrickBall" :imgs="[
+          :reference="{text: 'See the GitHub Project', link: 'https://github.com/GandrLu/BrickBall'}"
+          :imgs="[
             'src/assets/BrickBall_Title.png',
             'src/assets/BrickBall_Game1.png'
           ]" />
@@ -52,7 +61,7 @@ import Navigation from './components/Navigation.vue';
           ]" />
         <Article aId="bearpong" title="BearPong - MiniGameJam Berlin 11/2019"
           text="We made this little game where you take bears to the moon. Thanks to my teammates for this fun little project. Press the left mousebutton to charge a catapult and release it to shoot. Levels are randomly generated, when too hard, reload the page. Reach the moon!"
-          reference="/bearpong/index.html"
+          :reference="{text: 'Play it here!', link: '/bearpong/index.html'}"
           :imgs="[
             'src/assets/bearpong1.JPG',
             'src/assets/bearpong2.JPG'

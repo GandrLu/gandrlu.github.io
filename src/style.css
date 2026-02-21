@@ -177,6 +177,11 @@ iframe {
     padding-bottom: 10px;
 }
 
+.portraitFormatImg {
+    max-height: 50vh;
+    width: auto !important;
+}
+
 .responsive {
     padding: 0 6px;
     float: left;
