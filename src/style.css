@@ -1,6 +1,6 @@
 @font-face {
     font-family: HeaderFont;
-    src: url(BerlinSmallCaps.ttf);
+    src: local('Berlin Small Caps'), url(./assets/BerlinSmallCaps.ttf);
 }
 
 * {
@@ -61,7 +61,7 @@ div.desc {
 
 iframe {
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .active {
