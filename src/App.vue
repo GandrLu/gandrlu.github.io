@@ -4,6 +4,18 @@ import About from './components/About.vue'
 import Article from './components/Article.vue';
 import Navigation from './components/Navigation.vue';
 
+// Import images dynamically
+import lyriquiz1 from './assets/lyriquiz1_portrait.JPG'
+import shippair1 from './assets/shippair1.JPG'
+import shippair2 from './assets/shippair2.JPG'
+import shippair3 from './assets/shippair3.JPG'
+import onionwarRunning from './assets/OnionWarRunning.gif'
+import onionwarShooting from './assets/OnionWarShooting.gif'
+import brickballTitle from './assets/BrickBall_Title.png'
+import brickballGame from './assets/BrickBall_Game1.png'
+import bearpong1 from './assets/bearpong1.JPG'
+import bearpong2 from './assets/bearpong2.JPG'
+
 </script>
 
 <template>
@@ -17,22 +29,22 @@ import Navigation from './components/Navigation.vue';
         <Article aId="lyriquiz" title="Lyriquiz - A Lyric based Song Quiz"
           text="A vue.js web app that offers a lyric based song quiz. It uses the spotify and the lrclib.net api to generate personalised questions."
           :imgs="[
-            'src/assets/lyriquiz1_portrait.JPG'
+            lyriquiz1
           ]"
           :reference="{text: 'Try it here', link: 'https://lyriquiz-2aea0.web.app'}" />
         <Article aId="VrAirships" title="VR Airships"
           text="This is my latest VR project I am working on. It is a VR Game where you pilot a steampunk airship through various missions. The game is created with Unity and all assets are done by me."
           :imgs="[
-            'src/assets/shippair1.JPG',
-            'src/assets/shippair3.JPG',
-            'src/assets/shippair2.JPG'
+            shippair1,
+            shippair3,
+            shippair2
           ]" />
         <Article aId="OnionWar" title="OnionWar"
           text="This is a tactical shooter game with roleplay elements. Work in progress but first playable multiplayer version is ready."
           :reference="{text: 'See the GitHub Project', link: 'https://github.com/GandrLu/Cooling-Module-Game'}"
           :imgs="[
-            'src/assets/OnionWarRunning.gif',
-            'src/assets/OnionWarShooting.gif',
+            onionwarRunning,
+            onionwarShooting,
           ]" :vVids="[
             'https://player.vimeo.com/video/503239354',
             'https://player.vimeo.com/video/503683148'
@@ -51,8 +63,8 @@ import Navigation from './components/Navigation.vue';
           text="This is a simple brick breaker game made with C++ and qt. I kept the art style very simple (all was done by me) as I wanted to focus on learning qt."
           :reference="{text: 'See the GitHub Project', link: 'https://github.com/GandrLu/BrickBall'}"
           :imgs="[
-            'src/assets/BrickBall_Title.png',
-            'src/assets/BrickBall_Game1.png'
+            brickballTitle,
+            brickballGame
           ]" />
         <Article aId="Taxiii" title="Taxiii"
           text="A litte android mobile game prototype where you steer a taxi through the traffic. The traffic and obstacles are generated randomly and the taxi drives continuously faster over time. The game is created with unity by using assets from synty studios."
@@ -63,8 +75,8 @@ import Navigation from './components/Navigation.vue';
           text="We made this little game where you take bears to the moon. Thanks to my teammates for this fun little project. Press the left mousebutton to charge a catapult and release it to shoot. Levels are randomly generated, when too hard, reload the page. Reach the moon!"
           :reference="{text: 'Play it here!', link: '/bearpong/index.html'}"
           :imgs="[
-            'src/assets/bearpong1.JPG',
-            'src/assets/bearpong2.JPG'
+            bearpong1,
+            bearpong2
           ]" />
       </div>
       <div style="height: 60px"></div>
