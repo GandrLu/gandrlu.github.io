@@ -69,4 +69,11 @@
     justify-content: space-around;
     align-items: flex-start;
 }
+
+
+@media only screen and (max-width: 450px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
 </style>

@@ -303,4 +303,8 @@ iframe {
     .headerLogo {
         width: 90%;
     }
+
+    .portrait {
+        float: none;
+    }
 }
