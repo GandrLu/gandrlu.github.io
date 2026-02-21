@@ -5,7 +5,7 @@ import Article from './components/Article.vue';
 import Navigation from './components/Navigation.vue';
 
 // Import images dynamically
-import lyriquiz1 from './assets/lyriquiz1_portrait.JPG'
+import lyriquiz1 from './assets/lyriquiz1_portrait.jpg'
 import shippair1 from './assets/shippair1.JPG'
 import shippair2 from './assets/shippair2.JPG'
 import shippair3 from './assets/shippair3.JPG'
@@ -13,8 +13,8 @@ import onionwarRunning from './assets/OnionWarRunning.gif'
 import onionwarShooting from './assets/OnionWarShooting.gif'
 import brickballTitle from './assets/BrickBall_Title.png'
 import brickballGame from './assets/BrickBall_Game1.png'
-import bearpong1 from './assets/bearpong1.JPG'
-import bearpong2 from './assets/bearpong2.JPG'
+import bearpong1 from './assets/bearpong1.jpg'
+import bearpong2 from './assets/bearpong2.jpg'
 
 </script>
 
